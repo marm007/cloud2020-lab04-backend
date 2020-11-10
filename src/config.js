@@ -29,7 +29,7 @@ const config = {
         ip: '0.0.0.0',
         port: process.env.PORT || 8080,
         mongo: {
-            uri: ''
+            uri: 'mongodb+srv://marcin:eluThingol@cloudlabcluster.yzylu.mongodb.net/lab03?retryWrites=true&w=majority'
         }
     }
 };
