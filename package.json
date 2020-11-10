@@ -15,9 +15,7 @@
     "mongoose": "^5.10.13",
     "morgan": "~1.9.1",
     "pug": "2.0.0-beta11",
-    "query-string": "^6.13.7"
-  },
-  "devDependencies": {
+    "query-string": "^6.13.7",
     "cors": "^2.8.5",
     "moment": "^2.29.1"
   }
