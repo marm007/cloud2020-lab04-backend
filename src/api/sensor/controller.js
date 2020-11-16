@@ -13,7 +13,8 @@ const get = ({query}, res, next) => {
 
 const getLastMeasurements = ({query}, res, next) => {
     const numberOfMeasurements = query.number ? parseInt(query.number) : 10;
-    const values = query.values ? query.values : ['Temperature', 'Humidity', 'Pm10', 'Location', 'Date'];
+    const values = query.values ? query.values : ['Sensor_ID', 'Temperature', 'Humidity', 'Pm10', 'Location', 'Date'];
+
 
     Sensor.find({}, values).sort('-Date').limit(numberOfMeasurements)
         .then(notFound(res))
